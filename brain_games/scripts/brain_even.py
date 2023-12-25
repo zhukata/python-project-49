@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import random
 import prompt
-from brain_games.even_game import check_answer
+from brain_games.game import check_answer_even
 
 
 def main():
@@ -13,7 +13,7 @@ def main():
         random_num = random.randint(1,100)
         print (f"Question: {random_num}")
         answer = prompt.string(f"Your answer: ")
-        if check_answer(answer, random_num) == False:
+        if check_answer_even(answer, random_num) == False:
             return print(f"""'yes' is wrong answer ;(. Correct answer was 'no'."
 Let's try again, {name}!""")
         print("Correct!")

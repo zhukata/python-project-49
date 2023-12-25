@@ -6,7 +6,7 @@ def check_even_num(x):
     return False
 
 
-def check_answer(text, random_num):
+def check_answer_even(text, random_num):
     if text == 'yes':
         if check_even_num(random_num):
             return True
