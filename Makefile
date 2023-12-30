@@ -1,6 +1,9 @@
 install:
 	poetry install
 
+uninstall:
+	pip uninstall hexlet-code
+
 brain-games:
 	poetry run brain-games
 
@@ -9,7 +12,10 @@ brain-calc:
 
 brain-even:
 	poetry run brain-even
-	
+
+brain-gcd:
+	poetry run brain-gcd
+
 build:
 	poetry build
 
