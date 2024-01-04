@@ -26,7 +26,7 @@ def engine_func(game):
         print(f"Question: {question}")
         answer = prompt.string("Your answer:")
         correct_answer = game.correct_answer(question)
-        if check_answer(answer, correct_answer) == False:
+        if check_answer(answer, correct_answer) is False:
             return lose_game(answer, correct_answer, name)
         print("Correct!")
     return congratulations(name)
