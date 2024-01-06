@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 from brain_games.games import calc
-from brain_games.engine import engine_func
+from brain_games.engine import generate_round
 
 
 def main():
-    engine_func(calc)
+    generate_round(calc)
 
 
 if __name__ == '__main__':

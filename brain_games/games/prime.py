@@ -1,24 +1,19 @@
 import random
 
 
-game_rules = """Answer "yes" if given number is prime. Otherwise answer "no"."""
+GAME_RULES = """Answer "yes" if given number is prime. Otherwise answer "no"."""
+MIN_NUM = 1
+MAX_NUM = 3000
 
 
-list_prime_num = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29,
-31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97,
-101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151, 157,
-163, 167, 173, 179, 181, 191, 193, 197, 199, 211, 223, 227,
-229, 233, 239, 241, 251, 257, 263, 269, 271, 277, 281, 283, 293]
-
-
-def question_func():
-    question = random.randrange(1, 293, 2)
-    return question
-
-
-def correct_answer(question):
-    if question in list_prime_num:
+def get_question():
+    question = random.randint(MIN_NUM, MAX_NUM)
+    counter = 0
+    for i in range(2, question // 2 + 1):
+        if (question % i == 0):
+            counter += 1
+    if (counter <= 0):
         correct_answer = 'yes'
-        return correct_answer
-    correct_answer = 'no'
-    return correct_answer
+    else:
+        correct_answer = 'no'
+    return question, correct_answer

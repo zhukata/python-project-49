@@ -19,13 +19,13 @@ The essence of the game is as follows: the user is shown a random mathematical e
 
 The essence of the game is as follows: the user is shown two random numbers, the user must calculate and enter the greatest common divisor of these numbers.
 
-[![asciicast](https://asciinema.org/a/629417.svg)](https://asciinema.org/a/629417)
+[![asciicast](https://asciinema.org/a/630147.svg)](https://asciinema.org/a/630147)
 
 4. Brain-progression
 
 The essence of the game is as follows: the user is shown a series of numbers that form an arithmetic progression. One number is missing in the progression, the user must determine this number.
 
-[![asciicast](https://asciinema.org/a/629852.svg)](https://asciinema.org/a/629852)
+[![asciicast](https://asciinema.org/a/630148.svg)](https://asciinema.org/a/630148)
 
 5. Brain-prime
 
