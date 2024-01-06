@@ -17,7 +17,9 @@ def generate_round(game):
         print(f"Question: {question}")
         answer = prompt.string("Your answer:")
         if check_answer(answer, correct_answer) is False:
-            return print(f""""{answer}" is wrong answer ;(. Correct answer was "{correct_answer}".
-Let's try again, {name}!""")
+            return print((
+                f"""'{answer}' is wrong answer ;(. """
+                f"""Correct answer was '{correct_answer}'.
+Let's try again, {name}!"""))
         print("Correct!")
     return print(f"Congratulations, {name}!")
