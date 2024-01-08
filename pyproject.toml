@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = "brain-games"
+description = "Brain Games - a set of five console games, for pumping the brain."
 authors = ["zhukata <zhukata@gmail.com>"]
 readme = "README.md"
 repository = "https://github.com/zhukata/python-project-49.git"

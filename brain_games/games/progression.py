@@ -13,6 +13,7 @@ MIN_RANGE_NUM = 6
 
 
 def get_question():
+    """Generates a random question and returns it and the correct answer."""
     start = random.randint(MIN_NUM, MAX_START_NUM)
     step = random.randint(MIN_NUM, MAX_NUM)
     random_index = random.randint(MIN_NUM, MAX_INDEX_NUM)

@@ -2,12 +2,14 @@ import prompt
 
 
 def check_answer(answer, correct_answer):
+    """Checks if the answer is correct."""
     if answer != correct_answer:
         return False
     return True
 
 
 def generate_round(game):
+    """Generates a round of play, uses information from the user."""
     print("Welcome to the Brain Games!")
     name = prompt.string('May I have your name?')
     print(f"Hello, {name}")

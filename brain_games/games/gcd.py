@@ -7,16 +7,21 @@ MAX_NUM = 100
 
 
 def get_question():
+    """Generates a random question and returns it and the correct answer."""
     random_num = random.randint(MIN_NUM, MAX_NUM)
     random_num_2 = random.randint(MIN_NUM, MAX_NUM)
     question = str(random_num), str(random_num_2)
-    a = random_num
-    b = random_num_2
+    correct_answer = get_gcd(random_num, random_num_2)
+    output_question = " ".join(question)
+    return output_question, str(correct_answer)
+
+
+def get_gcd(a, b):
+    """Counts the greatest common divisor."""
     while a != 0 and b != 0:
         if a > b:
             a = a % b
         else:
             b = b % a
     correct_answer = (a + b)
-    output_question = " ".join(question)
-    return output_question, str(correct_answer)
+    return correct_answer
