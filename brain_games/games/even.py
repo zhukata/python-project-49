@@ -10,14 +10,17 @@ def get_question():
     """Generates a random question and returns it and the correct answer."""
     random_num = random.randint(MIN_NUM, MAX_NUM)
     question = random_num
-    correct_answer = isEven(question)
+    correct_answer = is_even(question)
+    if is_even(question) is False:
+        correct_answer = 'no'
+    else:
+        correct_answer = 'yes'
     return question, correct_answer
 
 
-def isEven(question):
+def is_even(question):
     """Checks if the number is even."""
     if question % 2 == 0:
-        correct_answer = 'yes'
+        return True
     else:
-        correct_answer = 'no'
-    return correct_answer
+        return False

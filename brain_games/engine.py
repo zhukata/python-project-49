@@ -1,13 +1,6 @@
 import prompt
 
 
-def check_answer(answer, correct_answer):
-    """Checks if the answer is correct."""
-    if answer != correct_answer:
-        return False
-    return True
-
-
 def generate_round(game):
     """Generates a round of play, uses information from the user."""
     print("Welcome to the Brain Games!")
@@ -18,7 +11,7 @@ def generate_round(game):
         question, correct_answer = game.get_question()
         print(f"Question: {question}")
         answer = prompt.string("Your answer:")
-        if check_answer(answer, correct_answer) is False:
+        if answer != correct_answer:
             return print((
                 f"""'{answer}' is wrong answer ;(. """
                 f"""Correct answer was '{correct_answer}'.
