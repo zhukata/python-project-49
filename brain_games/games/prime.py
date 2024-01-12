@@ -6,7 +6,7 @@ MIN_NUM = 1
 MAX_NUM = 3000
 
 
-def get_question():
+def generate_round():
     """Generates a random question and returns it and the correct answer"""
     question = random.randint(MIN_NUM, MAX_NUM)
     if is_prime(question) is False:

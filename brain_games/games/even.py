@@ -6,7 +6,7 @@ MIN_NUM = 1
 MAX_NUM = 100
 
 
-def get_question():
+def generate_round():
     """Generates a random question and returns it and the correct answer."""
     random_num = random.randint(MIN_NUM, MAX_NUM)
     question = random_num

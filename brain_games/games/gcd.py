@@ -6,12 +6,12 @@ MIN_NUM = 1
 MAX_NUM = 100
 
 
-def get_question():
+def generate_round():
     """Generates a random question and returns it and the correct answer."""
-    random_num = random.randint(MIN_NUM, MAX_NUM)
+    random_num_1 = random.randint(MIN_NUM, MAX_NUM)
     random_num_2 = random.randint(MIN_NUM, MAX_NUM)
-    question = str(random_num), str(random_num_2)
-    correct_answer = get_gcd(random_num, random_num_2)
+    question = str(random_num_1), str(random_num_2)
+    correct_answer = get_gcd(random_num_1, random_num_2)
     output_question = " ".join(question)
     return output_question, str(correct_answer)
 

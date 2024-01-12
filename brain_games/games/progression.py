@@ -12,10 +12,10 @@ MAX_START_NUM = 10
 MIN_RANGE_NUM = 6
 
 
-def get_question():
+def generate_round():
     """Generates a random question and returns it and the correct answer."""
     random_index = random.randint(MIN_NUM, MAX_INDEX_NUM)
-    progression = generate_list()
+    progression = generate_progression()
     correct_answer = progression.pop(random_index)
     progression.insert(random_index, "..")
     question = []
@@ -25,7 +25,7 @@ def get_question():
     return output_question, str(correct_answer)
 
 
-def generate_list():
+def generate_progression():
     """Generates a random progression"""
     start = random.randint(MIN_NUM, MAX_START_NUM)
     step = random.randint(MIN_NUM, MAX_NUM)
